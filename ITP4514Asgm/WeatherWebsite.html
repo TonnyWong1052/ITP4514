@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function apiResult(){
+            alert("We are going to another page to view the chart of weather prediction");
+            $(document).ready(function(){
+            $.ajax({
+                type:"GET", 
+                url: "http://127.0.0.1:8000/api/AIWeatherPred/" + "871",
+                dataType:"JSON",
+                success: function(JSON){
+                    
+                },
+                error: function(err){
+                    alert("something get error");
+                }
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Weather Prediction</h1>
+        Welcome to our website, this website can according our dataset to predict weather
+        current dataset data only until 2021<br>
+        Blue line is true data<br>
+        Red line is Predicted data<br>
+        <br>
+
+        <button onclick="apiResult()">Predict</button>
+    </center>
+</body>
+
+
+</html>
