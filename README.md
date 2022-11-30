@@ -7,7 +7,7 @@
 - Apply AI on website
 
 ## Algorithmia
-> Time series
+- Time series
 
 ## Set-up
 ```
