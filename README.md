@@ -6,6 +6,9 @@
 - Weather Prediction
 - Apply AI on website
 
+## Algorithmia
+> Time series
+
 ## Set-up
 ```
 python AiRESTful.py
