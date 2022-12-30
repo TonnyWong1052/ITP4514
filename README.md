@@ -4,6 +4,7 @@
 
 ## Features
 - Weather Prediction
+- Web scraping
 - Apply AI on website
 
 ## Algorithmia
